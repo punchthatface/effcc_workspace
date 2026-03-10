@@ -7,14 +7,18 @@ This repository is meant to be a simple place to:
 - learn the E1x SDK APIs
 - prototype peripherals like GPIO, UART, and I2C
 - keep lab bring-up code in one organized workspace
-ex
-# How to run
+
+# How to run manually (quickstart as example)
 export EFFCC_DIR=“/home/argus/effcc/”
 mkdir build
 cd build
 cmake -G Ninja .. -DEFF_STDIO_PORT=3
 ninja
 sudo /home/argus/effcc/bin/eff-flash fabric/quickstart.hex sram
+
+# run.sh
+chmod +x run.sh
+./run.sh {appname}
 
 # Notes
 
