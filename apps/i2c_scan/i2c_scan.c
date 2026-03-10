@@ -9,7 +9,7 @@ static void scan_bus(const char *name, eff_i2c_t *bus) {
     int found = 0;
 
     for (uint8_t addr = 0x03; addr < 0x78; addr++) {
-        int8_t status = eff_i2c_read(bus, addr,  &dummy, 1);
+        int8_t status = eff_i2c_read_raw(bus, addr,  &dummy, 1);
 
         printf("for addr = 0x%02X, status: %d\r\n", addr, status);
         // if (status == 0) {
