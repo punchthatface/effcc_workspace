@@ -15,7 +15,9 @@ mkdir build
 cd build
 cmake -G Ninja .. -DEFF_STDIO_PORT=3
 ninja
-sudo /home/argus/effcc/bin/eff-flash fabric/quickstart.hex sram
+sudo /home/argus/effcc/bin/eff-flash quickstart/fabric/quickstart.hex sram
+
+sudo minicom -D /dev/ttyACM2
 ```
 
 # run.sh
