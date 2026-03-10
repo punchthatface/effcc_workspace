@@ -9,7 +9,8 @@ This repository is meant to be a simple place to:
 - keep lab bring-up code in one organized workspace
 
 # How to run manually (quickstart as example)
-export EFFCC_DIR=“/home/argus/effcc/”
+```
+export EFFCC_DIR="/home/argus/effcc/"
 mkdir build
 cd build
 cmake -G Ninja .. -DEFF_STDIO_PORT=3
